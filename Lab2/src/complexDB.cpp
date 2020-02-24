@@ -4,23 +4,21 @@
  *  Created on: Feb 18, 2020
  *      Author: Gabriel
  */
-
 #include "complexDB.h"
 #include <fstream>
 #include <stdlib.h>
+#include <cstring>
 DB::DB() : count(0), option(0), size(10)
 {
 	arr1 = new Complex[size];
 	if(count == size - 1)
 	{
 		arr2 = new Complex[count];			//if too small, makes new one thats bigger and deletes the old one
-		for (int i = 0; i < count; i++)
-		{
-			arr2[i] = arr1[i];
-		}
+		memcpy(arr2, arr1, count);
 		delete[] arr1;
 		size++;
 		arr1 = new Complex[size];
+		memcpy(arr1, arr2, count);
 		delete[] arr2;
 	}
 }
