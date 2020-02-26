@@ -14,9 +14,7 @@ Student::Student(): student_id(0), phone(0), score(0)
 
 istream& operator >> (istream& in, Student& s)
 {
-	in >> s.student_id >> s.fname >> s.lname;
-	in.clear();
-	in >> s.phone >> s.email >> s.score;
+	in >> s.student_id >> s.fname >> s.lname >> s.phone >> s.email >> s.score;
 	return in;
 }
 
