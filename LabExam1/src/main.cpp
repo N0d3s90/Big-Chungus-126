@@ -17,7 +17,7 @@ int main()
 	ofstream fout;
 	fin.open("students.txt");
 	fout.open("top_3.txt");
-	Student arr[10], sum, top[10], temp;
+	Student arr[10], sum, top[3], temp;
 	int i(0);
 	while(!fin.eof())
 	{
