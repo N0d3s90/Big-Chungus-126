@@ -9,7 +9,6 @@
 
 Student::Student(): student_id(0), phone(0), score(0)
 {
-
 }
 
 istream& operator >> (istream& in, Student& s)
