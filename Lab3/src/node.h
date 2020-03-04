@@ -9,16 +9,11 @@
 #define NODE_H_
 #include "stock.h"
 
-
 class Node
 {
 public:
 	Stock stock;
 	Node *next;
 };
-
-
-
-
 
 #endif /* NODE_H_ */

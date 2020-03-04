@@ -10,7 +10,7 @@
 #include <string>
 #include <sstream>
 
-List::List() : head1(NULL), temp(NULL)
+List::List() : head1(NULL), head2(NULL), slow(NULL), fast(NULL), temp(NULL)
 {
 }
 void List::addNode(Stock s)
@@ -47,10 +47,19 @@ void List::printList()
 		cout << temp->stock;
 		temp = temp->next;
 	}
+	cout << "\n";
 }
-void List::printNode(Node * n)
+void List::printMid(Node * n)
 {
 	cout << "Middle Node is: \n" << n->stock;
+	temp = head1;
+	int count = 0;
+	while(temp->next != slow->next)
+		{
+			temp = temp->next;
+			count++;
+		}
+	cout << "Location is: "<< count << "\n";
 }
 Node * List::findMiddle()
 {
@@ -70,8 +79,10 @@ Node * List::findMiddle()
 }
 void List::splitList()
 {
+
 	head2 = slow->next;
 	slow->next = NULL;
+	cout << "\n";
 	cout << "List 1: \n";
 	temp = head1;
 	while(temp != NULL)
@@ -79,7 +90,7 @@ void List::splitList()
 		cout << temp->stock;
 		temp = temp->next;
 	}
-
+	cout << "\n";
 	cout << "List 2: \n";
 	temp = head2;
 	while(temp != NULL)

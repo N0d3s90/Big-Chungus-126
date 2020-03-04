@@ -16,7 +16,7 @@ public:
 	void addNode(Stock s);
 	void makeList();
 	void printList();
-	void printNode(Node * n);
+	void printMid(Node * n);
 	void splitList();
 	Node * findMiddle();
 private:
