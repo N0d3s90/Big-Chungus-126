@@ -1,0 +1,7 @@
+1    Symbol: A1   Shares: 69   Cost: $57.24
+2    Symbol: A2   Shares: 62   Cost: $44.64
+3    Symbol: A3   Shares: 81   Cost: $68.27
+4    Symbol: A4   Shares: 95   Cost: $19.42
+5    Symbol: A5   Shares: 91   Cost: $46.04
+6    Symbol: A6   Shares: 92   Cost: $23.82
+7    Symbol: A7   Shares: 18   Cost: $98.95
