@@ -31,7 +31,6 @@ public:
 	void sell();
 private:
 	Product product[15];
-	stack<string> stk;
 	double money;
 	Node * head;
 	Node * temp;
